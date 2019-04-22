@@ -1,0 +1,52 @@
+<html>
+<body bgcolor="#FDF5E6">
+ <body>
+
+    <center>
+    <input type="text" id="tb" name="tb" />
+    <input type="button" value="Random Number!" onclick="Random();" />
+    <input type="text" id="tc" name="tc" />
+    <input type="button" value="Extracting hours!" onclick="getHours();" />
+    <input type="text" id="td" name="td" />
+    <input type="button" value="Extracting month!" onclick="getMonth();" />
+  </center>
+   <head>
+    <title>Logic</title>
+    <center>
+      <script type="text/javascript">
+        alert("Hello there it's Logic");
+        var day = new Date();
+        document.write("Today's date is " + day);
+
+        //Random Number Generator
+        function Random()
+        {
+        var rnd = Math.floor(Math.random() *100);
+        console.log(Math.random() * 100);
+        document.getElementById('tb').value = rnd;
+        }
+        //Get hours
+        function getHours()
+        {
+          var d = new Date();
+          var currentHrs = d.getHours();
+          console.log(currentHrs);
+          document.getElementById('tc').value = currentHrs;
+        }
+        //Get months
+        function getMonth()
+        {
+          var d = new Date();
+          var currentMonth = d.getMonth();
+          console.log(currentMonth);
+          document.getElementById('td').value = currentMonth;
+        }
+
+      </script>
+
+    <p><b>Hello Logic</b></p>
+    <img id="pic_left" src = "Logic.jpg" alt="Logic" height="720" width="720">
+    <img id="pic_right" src = "Logic.jpg" alt="gLogic" height="720" width="720">
+    </center>
+  </head>
+</html>
